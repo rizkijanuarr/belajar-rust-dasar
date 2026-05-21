@@ -233,6 +233,16 @@ fn soal_12() {
 // Jika verified, tampilkan "Akun Terverifikasi".
 // Jika tidak, tampilkan "Akun Belum Diverifikasi".
 // Clue: nama function -> fn soal_13(), wajib pakai attribute #[test]
+#[test]
+fn soal_13() {
+    let is_verified = false;
+
+    if is_verified == true {
+        println!("Akun Terverifikasi!");
+    } else {
+        println!("Akun Belum Terverifikasi!");
+    }
+}
 
 // SOAL 14
 // Buat variable "sol_price": f64 = 180.50.
@@ -240,9 +250,31 @@ fn soal_12() {
 // Jika harga sekarang lebih tinggi dari modal, tampilkan "Profit".
 // Jika tidak, tampilkan "Rugi".
 // Clue: nama function -> fn soal_14(), wajib pakai attribute #[test]
+#[test]
+fn soal_14() {
+    let sol_price = 180.50;
+    let modal = 150.0;
+
+    if sol_price > modal {
+        println!("Profit!!!");
+    } else {
+        println!("RUGI!!");
+    }
+}
+
 
 // SOAL 15
 // Buat variable "panjang_pin": usize = 4.
 // Jika panjang pin tepat 6 karakter, tampilkan "PIN Valid".
 // Jika tidak, tampilkan "PIN Harus 6 Digit".
 // Clue: nama function -> fn soal_15(), wajib pakai attribute #[test]
+#[test]
+fn soal_15() {
+    let panjang_pin = 4;
+
+    if panjang_pin == 6 {
+        println!("PIN VALID!");
+    } else {
+        println!("PIN HARUS 6 DIGIT!");
+    }
+}
