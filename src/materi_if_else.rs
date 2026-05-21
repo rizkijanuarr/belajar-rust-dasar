@@ -278,3 +278,55 @@ fn soal_15() {
         println!("PIN HARUS 6 DIGIT!");
     }
 }
+
+
+// SOAL 16
+// Buat variable "koneksi": bool = false.
+// Jika koneksi true, tampilkan "Server Online".
+// Jika tidak, tampilkan "Server Offline".
+// Clue: nama function -> fn soal_16(), wajib pakai attribute #[test]
+#[test]
+fn soal_16() {
+    let koneksi = false;
+
+    if koneksi {
+        print!("Server Online!");
+    } else {
+        print!("Server Offline!");
+    }
+}
+
+// SOAL 17
+// Buat variable "attempts": i32 = 3.
+// Jika attempts lebih dari 0, tampilkan "Silakan Login".
+// Jika tidak, tampilkan "Akun Terkunci".
+// Clue: nama function -> fn soal_17(), wajib pakai attribute #[test]
+#[test]
+fn soal_17() {
+    let attempts = 3;
+
+    if attempts > 0 {
+        println!("Silahkan Login!");
+    } else {
+        println!("Akun Terkunci!");
+    }
+}
+
+
+// SOAL 18
+// Buat variable "gas_fee": f64 = 0.005.
+// Buat variable "saldo_sol": f64 = 0.003.
+// Jika saldo cukup untuk bayar gas fee, tampilkan "Transaksi Bisa Diproses".
+// Jika tidak, tampilkan "Saldo SOL Tidak Cukup".
+// Clue: nama function -> fn soal_18(), wajib pakai attribute #[test]
+#[test]
+fn soal_18() {
+    let gas_fee = 0.005;
+    let saldo_sol = 0.003;
+
+    if saldo_sol > gas_fee {
+        println!("Transaksi Bisa Diproses!");
+    } else {
+        println!("Saldo SOL tidak cukup!");
+    }
+}
