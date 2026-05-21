@@ -287,3 +287,74 @@ fn soal_5() {
     println!("{umur}, {is_pelajar}");
     println!("{result}");
 }
+
+// SOAL 1
+// Buat variable imutable "token_price": f64 dengan nilai 3_450.75.
+// Coba tampilkan, lalu coba ubah nilainya — perhatikan apa yang terjadi!
+// Clue: nama function -> fn soal_1(), wajib pakai attribute #[test]
+#[test]
+fn soal_6() {
+    let token_price = 3_450.75;
+
+    println!("Token Price: {}", token_price);
+}
+
+// SOAL 2
+// Buat variable mutable "stok_barang": i32 = 100.
+// Tampilkan stok awal, kurangi 30, tampilkan lagi,
+// lalu kurangi 25 lagi dan tampilkan.
+// Clue: nama function -> fn soal_2(), wajib pakai attribute #[test]
+#[test]
+fn soal_7() {
+    let mut stok_barang = 100;
+    stok_barang = stok_barang - 30;
+    stok_barang = stok_barang - 25;
+    println!("{}", stok_barang);
+}
+
+// SOAL 3
+// Buat variable imutable "nama": &str = "Rizki".
+// Lakukan shadowing dengan nama yang sama tapi tambahkan " - Rustacean" di belakangnya.
+// Tampilkan keduanya.
+// Clue: nama function -> fn soal_3(), wajib pakai attribute #[test]
+#[test]
+fn soal_8() {
+    let nama = "Rizki";
+    println!("{}", nama);
+    let nama = format!("{} - Rustocean", nama);
+    println!("{}", nama);
+}
+
+// SOAL 4
+// Buat variable mutable "saldo": i64 = 1_000_000.
+// Tampilkan saldo awal.
+// Tambahkan gaji 5_000_000, tampilkan.
+// Kurangi tagihan 2_500_000, tampilkan.
+// Kurangi belanja 750_000, tampilkan saldo akhir.
+// Clue: nama function -> fn soal_4(), wajib pakai attribute #[test]
+#[test]
+fn soal_9() {
+    let mut saldo = 1_000_000;
+    println!("Saldo Awal : {}", saldo);
+
+    saldo += 5_000_000;
+    println!("Saldo ditambah : {}", saldo);
+    saldo -= 2_500_000;
+    println!("Saldo dikurang : {}", saldo);
+
+    saldo -= 750_000;
+    println!("Saldo dikurang belanja : {}", saldo);
+}
+
+// SOAL 5
+// Buat variable imutable "is_active": bool = false.
+// Lakukan shadowing menjadi true.
+// Tampilkan sebelum dan sesudah shadowing.
+// Clue: nama function -> fn soal_5(), wajib pakai attribute #[test]
+#[test]
+fn soal_10() {
+    let is_active = false;
+    println!("Sebelum : {}", is_active);
+    let is_active = true;
+    println!("Sesudah : {}", is_active);
+}
