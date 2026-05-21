@@ -330,3 +330,22 @@ fn soal_18() {
         println!("Saldo SOL tidak cukup!");
     }
 }
+
+// SOAL 19
+// Buat variable "token_balance": u64 = 0.
+// Jika balance lebih dari 0, tampilkan "Ada Token".
+// Jika tidak, tampilkan "Wallet Kosong".
+// Clue: nama function -> fn soal_19(), wajib pakai attribute #[test]
+
+// SOAL 20
+// Buat variable "umur_wallet": u32 = 30.
+// Jika wallet berumur lebih dari 365 hari, tampilkan "Wallet Lama".
+// Jika tidak, tampilkan "Wallet Baru".
+// Clue: nama function -> fn soal_20(), wajib pakai attribute #[test]
+
+// SOAL 21
+// Buat variable "harga_nft": f64 = 2_500.0.
+// Buat variable "offer": f64 = 2_000.0.
+// Jika offer lebih besar atau sama dengan harga, tampilkan "Deal!".
+// Jika tidak, tampilkan "Offer Ditolak".
+// Clue: nama function -> fn soal_21(), wajib pakai attribute #[test]
