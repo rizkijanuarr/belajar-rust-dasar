@@ -174,3 +174,23 @@ fn soal_9() {
         println!("Budget Tidak Cukup");
     }
 }
+
+
+// SOAL 10
+// Buat variable "stok": i32 = 0.
+// Jika stok lebih dari 0, tampilkan "Stok Tersedia".
+// Jika tidak, tampilkan "Stok Habis".
+// Clue: nama function -> fn soal_10(), wajib pakai attribute #[test]
+
+// SOAL 11
+// Buat variable "nilai_transfer": i64 = 150_000.
+// Buat variable "limit_transfer": i64 = 100_000.
+// Jika nilai transfer melebihi limit, tampilkan "Transfer Ditolak".
+// Jika tidak, tampilkan "Transfer Berhasil".
+// Clue: nama function -> fn soal_11(), wajib pakai attribute #[test]
+
+// SOAL 12
+// Buat variable "username": &str = "rizki".
+// Jika panjang username kurang dari 5 karakter, tampilkan "Username Terlalu Pendek".
+// Jika tidak, tampilkan "Username Valid".
+// Clue: nama function -> fn soal_12(), wajib pakai attribute #[test]
