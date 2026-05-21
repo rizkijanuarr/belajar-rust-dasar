@@ -227,3 +227,22 @@ fn soal_12() {
         println!("Username Valid!");
     }
 }
+
+// SOAL 13
+// Buat variable "is_verified": bool = false.
+// Jika verified, tampilkan "Akun Terverifikasi".
+// Jika tidak, tampilkan "Akun Belum Diverifikasi".
+// Clue: nama function -> fn soal_13(), wajib pakai attribute #[test]
+
+// SOAL 14
+// Buat variable "sol_price": f64 = 180.50.
+// Buat variable "modal": f64 = 150.0.
+// Jika harga sekarang lebih tinggi dari modal, tampilkan "Profit".
+// Jika tidak, tampilkan "Rugi".
+// Clue: nama function -> fn soal_14(), wajib pakai attribute #[test]
+
+// SOAL 15
+// Buat variable "panjang_pin": usize = 4.
+// Jika panjang pin tepat 6 karakter, tampilkan "PIN Valid".
+// Jika tidak, tampilkan "PIN Harus 6 Digit".
+// Clue: nama function -> fn soal_15(), wajib pakai attribute #[test]
