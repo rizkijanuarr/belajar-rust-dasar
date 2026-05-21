@@ -181,6 +181,17 @@ fn soal_9() {
 // Jika stok lebih dari 0, tampilkan "Stok Tersedia".
 // Jika tidak, tampilkan "Stok Habis".
 // Clue: nama function -> fn soal_10(), wajib pakai attribute #[test]
+#[test]
+fn soal_10() {
+    let stok = 0;
+
+    if stok > 0 {
+        println!("Stok Tersedia");
+    } else {
+        println!("Stok Habis");
+    }
+}
+
 
 // SOAL 11
 // Buat variable "nilai_transfer": i64 = 150_000.
@@ -188,9 +199,31 @@ fn soal_9() {
 // Jika nilai transfer melebihi limit, tampilkan "Transfer Ditolak".
 // Jika tidak, tampilkan "Transfer Berhasil".
 // Clue: nama function -> fn soal_11(), wajib pakai attribute #[test]
+#[test]
+fn soal_11() {
+    let nilai_transfer = 150_000;
+    let limit_transfer = 100_000;
+
+    if nilai_transfer > limit_transfer {
+        println!("Transfer Ditolak!");
+    } else {
+        println!("Transfer Berhasil");
+    }
+}
+
 
 // SOAL 12
 // Buat variable "username": &str = "rizki".
 // Jika panjang username kurang dari 5 karakter, tampilkan "Username Terlalu Pendek".
 // Jika tidak, tampilkan "Username Valid".
 // Clue: nama function -> fn soal_12(), wajib pakai attribute #[test]
+#[test]
+fn soal_12() {
+    let username = "rizki";
+
+    if username.len() < 5 {
+        println!("Username Terlalu Pendek");
+    } else {
+        println!("Username Valid!");
+    }
+}
