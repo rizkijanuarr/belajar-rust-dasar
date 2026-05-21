@@ -336,12 +336,32 @@ fn soal_18() {
 // Jika balance lebih dari 0, tampilkan "Ada Token".
 // Jika tidak, tampilkan "Wallet Kosong".
 // Clue: nama function -> fn soal_19(), wajib pakai attribute #[test]
+#[test]
+fn soal_19() {
+    let token_balance = 0;
+
+    if token_balance > 0 {
+        println!("ADA TOKEN!");
+    } else {
+        println!("WALLET KOSONG!");
+    }
+}
 
 // SOAL 20
 // Buat variable "umur_wallet": u32 = 30.
 // Jika wallet berumur lebih dari 365 hari, tampilkan "Wallet Lama".
 // Jika tidak, tampilkan "Wallet Baru".
 // Clue: nama function -> fn soal_20(), wajib pakai attribute #[test]
+#[test]
+fn soal_20() {
+    let umur_wallet = 30;
+
+    if umur_wallet > 365 {
+        println!("WALLET LAMA!");
+    } else {
+        println!("WALLET BARU!");
+    }
+}
 
 // SOAL 21
 // Buat variable "harga_nft": f64 = 2_500.0.
@@ -349,3 +369,14 @@ fn soal_18() {
 // Jika offer lebih besar atau sama dengan harga, tampilkan "Deal!".
 // Jika tidak, tampilkan "Offer Ditolak".
 // Clue: nama function -> fn soal_21(), wajib pakai attribute #[test]
+#[test]
+fn soal_21() {
+    let harga_nft = 2_500.0;
+    let offer = 2_000.0;
+
+    if offer >= harga_nft {
+        println!("DEAL!");
+    } else {
+        println!("OFFER DITOLAK!");
+    }
+}
