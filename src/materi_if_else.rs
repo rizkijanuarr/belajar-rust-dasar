@@ -123,3 +123,23 @@ fn soal_6() {
         println!("lansia");
     }
 }
+
+
+// SOAL 7
+// Buat variable "password": &str = "rust123".
+// Jika panjang password lebih dari atau sama dengan 8 karakter, tampilkan "Password Kuat".
+// Jika tidak, tampilkan "Password Lemah".
+// Clue: nama function -> fn soal_4(), wajib pakai attribute #[test]
+
+// SOAL 8
+// Buat variable "suhu": f64 = 38.5.
+// Jika suhu di atas 37.5, tampilkan "Demam".
+// Jika tidak, tampilkan "Normal".
+// Clue: nama function -> fn soal_5(), wajib pakai attribute #[test]
+
+// SOAL 9
+// Buat variable "eth_price": f64 = 3_450.75.
+// Buat variable "budget": f64 = 5_000.0.
+// Jika budget cukup untuk beli 1 ETH, tampilkan "Bisa Beli ETH".
+// Jika tidak, tampilkan "Budget Tidak Cukup".
+// Clue: nama function -> fn soal_6(), wajib pakai attribute #[test]
