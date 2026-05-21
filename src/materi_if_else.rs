@@ -130,12 +130,32 @@ fn soal_6() {
 // Jika panjang password lebih dari atau sama dengan 8 karakter, tampilkan "Password Kuat".
 // Jika tidak, tampilkan "Password Lemah".
 // Clue: nama function -> fn soal_4(), wajib pakai attribute #[test]
+#[test]
+fn soal_7() {
+    let password = "rust123";
+
+    if password.len() >= 8 {
+        println!("Password Kuat");
+    } else {
+        println!("Password Lemah");
+    }
+}
 
 // SOAL 8
 // Buat variable "suhu": f64 = 38.5.
 // Jika suhu di atas 37.5, tampilkan "Demam".
 // Jika tidak, tampilkan "Normal".
 // Clue: nama function -> fn soal_5(), wajib pakai attribute #[test]
+#[test]
+fn soal_8() {
+    let suhu = 38.5;
+
+    if suhu > 37.5 {
+        println!("Demam");
+    } else {
+        println!("Normal");
+    }
+}
 
 // SOAL 9
 // Buat variable "eth_price": f64 = 3_450.75.
@@ -143,3 +163,14 @@ fn soal_6() {
 // Jika budget cukup untuk beli 1 ETH, tampilkan "Bisa Beli ETH".
 // Jika tidak, tampilkan "Budget Tidak Cukup".
 // Clue: nama function -> fn soal_6(), wajib pakai attribute #[test]
+#[test]
+fn soal_9() {
+    let eth_price = 3_450.75;
+    let budget = 5_000.0;
+
+    if eth_price < budget {
+        println!("Bisa Beli ETH");
+    } else {
+        println!("Budget Tidak Cukup");
+    }
+}
