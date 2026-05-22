@@ -572,6 +572,16 @@ fn soal_31() {
  * Jika tidak, tampilkan "Running on Testnet".
  * Clue: nama function -> fn soal_32(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_32() {
+    let is_mainnet = false;
+
+    if is_mainnet {
+        println!("Running on Mainnet!");
+    } else {
+        println!("Running on Testnet!");
+    }
+}
 
 /*
  * SOAL 33
@@ -581,6 +591,17 @@ fn soal_31() {
  * Jika tidak, tampilkan "Menunggu Konfirmasi".
  * Clue: nama function -> fn soal_33(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_33() {
+    let confirmations = 3;
+    let required_confirmations = 6;
+
+    if confirmations >= required_confirmations {
+        println!("Transaksi Confirmed!");
+    } else {
+        println!("Menunggu Konfirmasi!");
+    }
+}
 
 /*
  * SOAL 34
@@ -590,6 +611,17 @@ fn soal_31() {
  * Jika tidak, tampilkan "Posisi Rugi".
  * Clue: nama function -> fn soal_34(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_34() {
+    let token_price = 0.00045;
+    let buy_price = 0.00030;
+
+    if token_price > buy_price {
+        println!("Posisi Profit!");
+    } else {
+        println!("Posisi Rugi");
+    }
+}
 
 /*
  * SOAL 35
@@ -598,6 +630,16 @@ fn soal_31() {
  * Jika tidak, tampilkan "Node Perlu Perhatian".
  * Clue: nama function -> fn soal_35(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_35() {
+    let node_uptime = 98.5;
+
+    if node_uptime >= 99.0 {
+        println!("Node Sehat!");
+    } else {
+        println!("Node Perlu Perhatian");
+    }
+}
 
 /*
  * SOAL 36
@@ -607,6 +649,18 @@ fn soal_31() {
  * Jika tidak, tampilkan "Supply Masih Tersedia".
  * Clue: nama function -> fn soal_36(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_36() {
+    let max_supply = 21_000_000;
+    let minted = 19_500_000;
+    let batas_persen_90 = max_supply as f64 * 0.90;
+
+    if minted as f64 > batas_persen_90 {
+        println!("Supply Hampir Habis");
+    } else {
+        println!("Supply Masih tersedia!");
+    }
+}
 
 /*
  * SOAL 37
@@ -615,6 +669,16 @@ fn soal_31() {
  * Jika tidak, tampilkan "WARNING: Contract Belum Diaudit!".
  * Clue: nama function -> fn soal_37(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_37() {
+    let is_audited = false;
+
+    if is_audited {
+        println!("Contract Aman");
+    } else {
+        println!("Contract belum di audit!");
+    }
+}
 
 /*
  * SOAL 38
@@ -624,6 +688,16 @@ fn soal_31() {
  * Jika tidak, tampilkan "TVL Terlalu Rendah".
  * Clue: nama function -> fn soal_38(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_38() {
+    let tvl = 5_000_000.0;
+    let min_tvl = 1_000_000.0;
+    if min_tvl >= tvl {
+        println!("Protocol sehat!");
+    } else {
+        println!("TVL Terlalu Murah");
+    }
+}
 
 /*
  * SOAL 39
@@ -632,6 +706,16 @@ fn soal_31() {
  * Jika tidak, tampilkan "Jaringan Lambat".
  * Clue: nama function -> fn soal_39(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_39() {
+    let block_time = 400;
+
+    if block_time < 500 {
+        println!("Jaringan Cepat");
+    } else {
+        println!("Jaringan Lambat");
+    }
+}
 
 /*
  * SOAL 40
@@ -642,6 +726,19 @@ fn soal_31() {
  * Jika tidak, tampilkan "Royalty Kecil".
  * Clue: nama function -> fn soal_40(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_40() {
+    let royalty_fee = 0.10;
+    let sale_price = 5_000.0;
+
+    let royalty = sale_price * royalty_fee;
+
+    if royalty > 300.0 {
+        println!("ROYALTY BESAR!");
+    } else {
+        println!("ROYALTY KECIL!");
+    }
+}
 
 /*
  * SOAL 41
@@ -651,3 +748,14 @@ fn soal_31() {
  * Jika tidak, tampilkan "Hash Rate Tidak Cukup".
  * Clue: nama function -> fn soal_41(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_41() {
+    let hash_rate = 150_000_000;
+    let min_hash_rate = 100_000_000;
+
+    if hash_rate >= min_hash_rate {
+        println!("MINING AKTIF");
+    } else {
+        println!("HASH RATE TIDAK CUKUP");
+    }
+}
