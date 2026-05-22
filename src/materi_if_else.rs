@@ -564,3 +564,90 @@ fn soal_31() {
         println!("STAKE TIDAK CUKUP!");
     }
 }
+
+/*
+ * SOAL 32
+ * Buat variable "is_mainnet": bool = false.
+ * Jika mainnet, tampilkan "Running on Mainnet".
+ * Jika tidak, tampilkan "Running on Testnet".
+ * Clue: nama function -> fn soal_32(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 33
+ * Buat variable "confirmations": u32 = 3.
+ * Buat variable "required_confirmations": u32 = 6.
+ * Jika confirmations mencukupi, tampilkan "Transaksi Confirmed".
+ * Jika tidak, tampilkan "Menunggu Konfirmasi".
+ * Clue: nama function -> fn soal_33(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 34
+ * Buat variable "token_price": f64 = 0.00045.
+ * Buat variable "buy_price": f64 = 0.00030.
+ * Jika harga sekarang lebih tinggi dari harga beli, tampilkan "Posisi Profit".
+ * Jika tidak, tampilkan "Posisi Rugi".
+ * Clue: nama function -> fn soal_34(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 35
+ * Buat variable "node_uptime": f64 = 98.5.
+ * Jika uptime lebih dari atau sama dengan 99.0, tampilkan "Node Sehat".
+ * Jika tidak, tampilkan "Node Perlu Perhatian".
+ * Clue: nama function -> fn soal_35(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 36
+ * Buat variable "max_supply": u64 = 21_000_000.
+ * Buat variable "minted": u64 = 19_500_000.
+ * Jika minted sudah melebihi 90% dari max supply, tampilkan "Supply Hampir Habis".
+ * Jika tidak, tampilkan "Supply Masih Tersedia".
+ * Clue: nama function -> fn soal_36(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 37
+ * Buat variable "is_audited": bool = false.
+ * Jika contract sudah diaudit, tampilkan "Contract Aman".
+ * Jika tidak, tampilkan "WARNING: Contract Belum Diaudit!".
+ * Clue: nama function -> fn soal_37(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 38
+ * Buat variable "tvl": f64 = 5_000_000.0.
+ * Buat variable "min_tvl": f64 = 1_000_000.0.
+ * Jika TVL mencukupi minimum, tampilkan "Protocol Sehat".
+ * Jika tidak, tampilkan "TVL Terlalu Rendah".
+ * Clue: nama function -> fn soal_38(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 39
+ * Buat variable "block_time": u32 = 400.
+ * Jika block time di bawah 500ms, tampilkan "Jaringan Cepat".
+ * Jika tidak, tampilkan "Jaringan Lambat".
+ * Clue: nama function -> fn soal_39(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 40
+ * Buat variable "royalty_fee": f64 = 0.10.
+ * Buat variable "sale_price": f64 = 5_000.0.
+ * Hitung royalty yang didapat (sale_price * royalty_fee).
+ * Jika royalty lebih dari 300.0, tampilkan "Royalty Besar".
+ * Jika tidak, tampilkan "Royalty Kecil".
+ * Clue: nama function -> fn soal_40(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 41
+ * Buat variable "hash_rate": u64 = 150_000_000.
+ * Buat variable "min_hash_rate": u64 = 100_000_000.
+ * Jika hash rate mencukupi minimum, tampilkan "Mining Aktif".
+ * Jika tidak, tampilkan "Hash Rate Tidak Cukup".
+ * Clue: nama function -> fn soal_41(), wajib pakai attribute #[test]
+ */
