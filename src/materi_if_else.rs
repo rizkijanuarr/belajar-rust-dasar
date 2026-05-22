@@ -767,6 +767,16 @@ fn soal_41() {
  * Jika tidak, tampilkan "Tidak Ada Reward".
  * Clue: nama function -> fn soal_42(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_42() {
+    let is_staking = true;
+
+    if is_staking {
+        println!("REWARD BERJALAN!");
+    } else {
+        println!("TIDAK ADA REWARD");
+    }
+}
 
 /*
  * SOAL 43
@@ -776,6 +786,17 @@ fn soal_41() {
  * Jika tidak, tampilkan "Mempool Normal".
  * Clue: nama function -> fn soal_43(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_43() {
+    let pending_tx = 150;
+    let max_pending = 100;
+
+    if pending_tx > max_pending {
+        println!("MEMPOOL PENUH");
+    } else {
+        println!("MEMPOOL NORMAL");
+    }
+}
 
 /*
  * SOAL 44
@@ -785,6 +806,17 @@ fn soal_41() {
  * Jika tidak, tampilkan "Pool Kurang Menarik".
  * Clue: nama function -> fn soal_44(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_44() {
+    let apy = 8.5;
+    let min_apy = 5.0;
+
+    if apy > min_apy {
+        println!("POOL MENARIK!");
+    } else {
+        println!("POOL KURANG MENARIK");
+    }
+}
 
 /*
  * SOAL 45
@@ -793,6 +825,16 @@ fn soal_41() {
  * Jika tidak, tampilkan "Akun Terbatas, Selesaikan KYC".
  * Clue: nama function -> fn soal_45(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_45() {
+    let is_kyc = false;
+
+    if is_kyc {
+        println!("Akun Full Akses");
+    } else {
+        println!("Akun Terbatas");
+    }
+}
 
 /*
  * SOAL 46
@@ -802,6 +844,17 @@ fn soal_41() {
  * Jika tidak, tampilkan "Belum Bisa Unlock".
  * Clue: nama function -> fn soal_46(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_46() {
+    let locked_amount = 10_000;
+    let unlock_amount = 10_000;
+
+    if locked_amount == unlock_amount {
+        println!("SIAP UNLOCK!");
+    } else {
+        println!("BELUM BISA UNCLOCK!");
+    }
+}
 
 /*
  * SOAL 47
@@ -812,6 +865,18 @@ fn soal_41() {
  * Jika tidak, tampilkan "Fee Wajar".
  * Clue: nama function -> fn soal_47(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_47() {
+    let fee_persen = 0.03;
+    let amount = 10_000.0;
+
+    let fee = amount * fee_persen;
+    if fee > 200.0 {
+        println!("FEE MAHAL!");
+    } else {
+        println!("FEE WAJAR");
+    }
+}
 
 /*
  * SOAL 48
@@ -821,6 +886,18 @@ fn soal_41() {
  * Jika tidak, tampilkan "Epoch Masih Berjalan".
  * Clue: nama function -> fn soal_48(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_48() {
+    let epoch = 450;
+    let max_epoch = 500;
+    let batas_90_persen = epoch as f64 * 0.90;
+
+    if batas_90_persen > max_epoch as f64 {
+        println!("EPOCH HAMPIR SELESAI");
+    } else {
+        println!("EPOCH MASIH BERJALAN");
+    }
+}
 
 /*
  * SOAL 49
@@ -829,6 +906,16 @@ fn soal_41() {
  * Jika tidak, tampilkan "Transaksi Diizinkan".
  * Clue: nama function -> fn soal_49(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_49() {
+    let is_blacklisted = true;
+
+    if is_blacklisted {
+        println!("TRANSAKSI DIBLOKIR");
+    } else {
+        println!("TRANSAKSI DIIZINKAN");
+    }
+}
 
 /*
  * SOAL 50
@@ -838,6 +925,17 @@ fn soal_41() {
  * Jika tidak, tampilkan "Offer Dibawah Floor Price".
  * Clue: nama function -> fn soal_50(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_50() {
+    let nft_floor_price = 2.5;
+    let offer_price = 2.5;
+
+    if offer_price == nft_floor_price || offer_price >= nft_floor_price {
+        println!("OFFER DITERIMA!");
+    } else {
+        println!("OFFER DIBAWAH FLOOR PRICE");
+    }
+}
 
 /*
  * SOAL 51
@@ -847,6 +945,17 @@ fn soal_41() {
  * Jika tidak, tampilkan "Quorum Belum Tercapai".
  * Clue: nama function -> fn soal_51(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_51() {
+    let total_voter = 1_000;
+    let quorum = 500;
+
+    if total_voter > quorum {
+        println!("VOTING VALID!");
+    } else {
+        println!("QUORUM BELUM TERCAPAI!");
+    }
+}
 
 /*
  * SOAL 52
@@ -856,6 +965,17 @@ fn soal_41() {
  * Jika tidak, tampilkan "Gas Cukup".
  * Clue: nama function -> fn soal_52(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_52() {
+    let gas_used = 21_000;
+    let gas_limit = 30_000;
+
+    if gas_used > gas_limit {
+        println!("OUT OF GAS!");
+    } else {
+        println!("GAS CUKUP!");
+    }
+}
 
 /*
  * SOAL 53
@@ -864,6 +984,17 @@ fn soal_41() {
  * Jika tidak, tampilkan "Harga Turun".
  * Clue: nama function -> fn soal_53(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_53() {
+    let price_change = -5.2;
+    let convert_to_integer = price_change as i32;
+
+    if convert_to_integer > 0 {
+        println!("HARGA NAIK");
+    } else {
+        println!("HARGA TURUN");
+    }
+}
 
 /*
  * SOAL 54
@@ -874,6 +1005,18 @@ fn soal_41() {
  * Jika tidak, tampilkan "Reward Normal".
  * Clue: nama function -> fn soal_54(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_54() {
+    let staking_period = 90;
+    let min_period = 30;
+
+    let tiga_kali_lipat = min_period * 3;
+    if staking_period >= tiga_kali_lipat {
+        println!("BONUS REWARD AKTIF");
+    } else {
+        println!("REWARD NORMAL");
+    }
+}
 
 /*
  * SOAL 55
@@ -882,59 +1025,13 @@ fn soal_41() {
  * Jika tidak, tampilkan "Kode Tidak Transparan".
  * Clue: nama function -> fn soal_55(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_55() {
+    let is_open_source = true;
 
-/*
- * SOAL 56
- * Buat variable "bridge_amount": f64 = 500.0.
- * Buat variable "min_bridge": f64 = 100.0.
- * Buat variable "max_bridge": f64 = 1_000.0.
- * Hitung apakah amount dalam range min dan max.
- * Jika iya, tampilkan "Bridge Valid".
- * Jika tidak, tampilkan "Amount Diluar Batas".
- * Clue: nama function -> fn soal_56(), wajib pakai attribute #[test]
- */
-
-/*
- * SOAL 57
- * Buat variable "reward": f64 = 150.0.
- * Buat variable "tax_persen": f64 = 0.20.
- * Hitung reward bersih setelah dipotong pajak.
- * Jika reward bersih lebih dari 100.0, tampilkan "Reward Lumayan".
- * Jika tidak, tampilkan "Reward Kecil".
- * Clue: nama function -> fn soal_57(), wajib pakai attribute #[test]
- */
-
-/*
- * SOAL 58
- * Buat variable "is_multisig": bool = true.
- * Jika wallet multisig, tampilkan "Wallet Lebih Aman".
- * Jika tidak, tampilkan "Gunakan Multisig untuk Keamanan Lebih".
- * Clue: nama function -> fn soal_58(), wajib pakai attribute #[test]
- */
-
-/*
- * SOAL 59
- * Buat variable "delegated_stake": u64 = 5_000.
- * Buat variable "total_stake": u64 = 50_000.
- * Jika delegated stake lebih dari 10% total stake, tampilkan "Delegasi Signifikan".
- * Jika tidak, tampilkan "Delegasi Kecil".
- * Clue: nama function -> fn soal_59(), wajib pakai attribute #[test]
- */
-
-/*
- * SOAL 60
- * Buat variable "nonce": u64 = 0.
- * Jika nonce sama dengan 0, tampilkan "Transaksi Pertama Wallet".
- * Jika tidak, tampilkan "Wallet Sudah Pernah Transaksi".
- * Clue: nama function -> fn soal_60(), wajib pakai attribute #[test]
- */
-
-/*
- * SOAL 61
- * Buat variable "protocol_fee": f64 = 0.003.
- * Buat variable "swap_amount": f64 = 50_000.0.
- * Hitung total fee (swap_amount * protocol_fee).
- * Jika fee lebih dari 100.0, tampilkan "Fee Signifikan".
- * Jika tidak, tampilkan "Fee Masih Wajar".
- * Clue: nama function -> fn soal_61(), wajib pakai attribute #[test]
- */
+    if is_open_source {
+        println!("KODE BISA DIVERIFIKASI");
+    } else {
+        println!("KODE TIDAK TRANSPARAN");
+    }
+}
