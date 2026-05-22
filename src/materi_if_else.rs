@@ -759,3 +759,182 @@ fn soal_41() {
         println!("HASH RATE TIDAK CUKUP");
     }
 }
+
+/*
+ * SOAL 42
+ * Buat variable "is_staking": bool = true.
+ * Jika sedang staking, tampilkan "Reward Berjalan".
+ * Jika tidak, tampilkan "Tidak Ada Reward".
+ * Clue: nama function -> fn soal_42(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 43
+ * Buat variable "pending_tx": u32 = 150.
+ * Buat variable "max_pending": u32 = 100.
+ * Jika pending tx melebihi maksimum, tampilkan "Mempool Penuh".
+ * Jika tidak, tampilkan "Mempool Normal".
+ * Clue: nama function -> fn soal_43(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 44
+ * Buat variable "apy": f64 = 8.5.
+ * Buat variable "min_apy": f64 = 5.0.
+ * Jika APY mencukupi minimum, tampilkan "Pool Menarik".
+ * Jika tidak, tampilkan "Pool Kurang Menarik".
+ * Clue: nama function -> fn soal_44(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 45
+ * Buat variable "is_kyc": bool = false.
+ * Jika KYC sudah selesai, tampilkan "Akun Full Access".
+ * Jika tidak, tampilkan "Akun Terbatas, Selesaikan KYC".
+ * Clue: nama function -> fn soal_45(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 46
+ * Buat variable "locked_amount": u64 = 10_000.
+ * Buat variable "unlock_amount": u64 = 10_000.
+ * Jika locked amount sama dengan unlock amount, tampilkan "Siap Unlock".
+ * Jika tidak, tampilkan "Belum Bisa Unlock".
+ * Clue: nama function -> fn soal_46(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 47
+ * Buat variable "fee_persen": f64 = 0.03.
+ * Buat variable "amount": f64 = 10_000.0.
+ * Hitung fee (amount * fee_persen).
+ * Jika fee lebih dari 200.0, tampilkan "Fee Mahal".
+ * Jika tidak, tampilkan "Fee Wajar".
+ * Clue: nama function -> fn soal_47(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 48
+ * Buat variable "epoch": u64 = 450.
+ * Buat variable "max_epoch": u64 = 500.
+ * Jika epoch sudah melebihi 90% dari max epoch, tampilkan "Epoch Hampir Selesai".
+ * Jika tidak, tampilkan "Epoch Masih Berjalan".
+ * Clue: nama function -> fn soal_48(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 49
+ * Buat variable "is_blacklisted": bool = true.
+ * Jika address masuk blacklist, tampilkan "Transaksi Diblokir".
+ * Jika tidak, tampilkan "Transaksi Diizinkan".
+ * Clue: nama function -> fn soal_49(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 50
+ * Buat variable "nft_floor_price": f64 = 2.5.
+ * Buat variable "offer_price": f64 = 2.5.
+ * Jika offer sama dengan atau lebih dari floor price, tampilkan "Offer Diterima".
+ * Jika tidak, tampilkan "Offer Dibawah Floor Price".
+ * Clue: nama function -> fn soal_50(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 51
+ * Buat variable "total_voter": u32 = 1_000.
+ * Buat variable "quorum": u32 = 500.
+ * Jika total voter mencapai quorum, tampilkan "Voting Valid".
+ * Jika tidak, tampilkan "Quorum Belum Tercapai".
+ * Clue: nama function -> fn soal_51(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 52
+ * Buat variable "gas_used": u64 = 21_000.
+ * Buat variable "gas_limit": u64 = 30_000.
+ * Jika gas used melebihi gas limit, tampilkan "Out of Gas".
+ * Jika tidak, tampilkan "Gas Cukup".
+ * Clue: nama function -> fn soal_52(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 53
+ * Buat variable "price_change": f64 = -5.2.
+ * Jika price change lebih dari 0, tampilkan "Harga Naik".
+ * Jika tidak, tampilkan "Harga Turun".
+ * Clue: nama function -> fn soal_53(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 54
+ * Buat variable "staking_period": u32 = 90.
+ * Buat variable "min_period": u32 = 30.
+ * Hitung apakah staking period sudah 3x lipat dari minimum.
+ * Jika iya, tampilkan "Bonus Reward Aktif".
+ * Jika tidak, tampilkan "Reward Normal".
+ * Clue: nama function -> fn soal_54(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 55
+ * Buat variable "is_open_source": bool = true.
+ * Jika contract open source, tampilkan "Kode Bisa Diverifikasi".
+ * Jika tidak, tampilkan "Kode Tidak Transparan".
+ * Clue: nama function -> fn soal_55(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 56
+ * Buat variable "bridge_amount": f64 = 500.0.
+ * Buat variable "min_bridge": f64 = 100.0.
+ * Buat variable "max_bridge": f64 = 1_000.0.
+ * Hitung apakah amount dalam range min dan max.
+ * Jika iya, tampilkan "Bridge Valid".
+ * Jika tidak, tampilkan "Amount Diluar Batas".
+ * Clue: nama function -> fn soal_56(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 57
+ * Buat variable "reward": f64 = 150.0.
+ * Buat variable "tax_persen": f64 = 0.20.
+ * Hitung reward bersih setelah dipotong pajak.
+ * Jika reward bersih lebih dari 100.0, tampilkan "Reward Lumayan".
+ * Jika tidak, tampilkan "Reward Kecil".
+ * Clue: nama function -> fn soal_57(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 58
+ * Buat variable "is_multisig": bool = true.
+ * Jika wallet multisig, tampilkan "Wallet Lebih Aman".
+ * Jika tidak, tampilkan "Gunakan Multisig untuk Keamanan Lebih".
+ * Clue: nama function -> fn soal_58(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 59
+ * Buat variable "delegated_stake": u64 = 5_000.
+ * Buat variable "total_stake": u64 = 50_000.
+ * Jika delegated stake lebih dari 10% total stake, tampilkan "Delegasi Signifikan".
+ * Jika tidak, tampilkan "Delegasi Kecil".
+ * Clue: nama function -> fn soal_59(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 60
+ * Buat variable "nonce": u64 = 0.
+ * Jika nonce sama dengan 0, tampilkan "Transaksi Pertama Wallet".
+ * Jika tidak, tampilkan "Wallet Sudah Pernah Transaksi".
+ * Clue: nama function -> fn soal_60(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 61
+ * Buat variable "protocol_fee": f64 = 0.003.
+ * Buat variable "swap_amount": f64 = 50_000.0.
+ * Hitung total fee (swap_amount * protocol_fee).
+ * Jika fee lebih dari 100.0, tampilkan "Fee Signifikan".
+ * Jika tidak, tampilkan "Fee Masih Wajar".
+ * Clue: nama function -> fn soal_61(), wajib pakai attribute #[test]
+ */
