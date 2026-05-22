@@ -124,7 +124,6 @@ fn soal_6() {
     }
 }
 
-
 // SOAL 7
 // Buat variable "password": &str = "rust123".
 // Jika panjang password lebih dari atau sama dengan 8 karakter, tampilkan "Password Kuat".
@@ -175,7 +174,6 @@ fn soal_9() {
     }
 }
 
-
 // SOAL 10
 // Buat variable "stok": i32 = 0.
 // Jika stok lebih dari 0, tampilkan "Stok Tersedia".
@@ -191,7 +189,6 @@ fn soal_10() {
         println!("Stok Habis");
     }
 }
-
 
 // SOAL 11
 // Buat variable "nilai_transfer": i64 = 150_000.
@@ -210,7 +207,6 @@ fn soal_11() {
         println!("Transfer Berhasil");
     }
 }
-
 
 // SOAL 12
 // Buat variable "username": &str = "rizki".
@@ -262,7 +258,6 @@ fn soal_14() {
     }
 }
 
-
 // SOAL 15
 // Buat variable "panjang_pin": usize = 4.
 // Jika panjang pin tepat 6 karakter, tampilkan "PIN Valid".
@@ -278,7 +273,6 @@ fn soal_15() {
         println!("PIN HARUS 6 DIGIT!");
     }
 }
-
 
 // SOAL 16
 // Buat variable "koneksi": bool = false.
@@ -311,7 +305,6 @@ fn soal_17() {
         println!("Akun Terkunci!");
     }
 }
-
 
 // SOAL 18
 // Buat variable "gas_fee": f64 = 0.005.
@@ -380,3 +373,44 @@ fn soal_21() {
         println!("OFFER DITOLAK!");
     }
 }
+
+/*
+ * SOAL 22
+ * Buat variable "is_whitelist": bool = true.
+ * Jika masuk whitelist, tampilkan "Akses Mint NFT Diberikan".
+ * Jika tidak, tampilkan "Kamu Tidak Ada di Whitelist".
+ * Clue: nama function -> fn soal_22(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 23
+ * Buat variable "tx_size": u32 = 1200.
+ * Jika ukuran transaksi lebih dari 1000 bytes, tampilkan "Transaksi Terlalu Besar".
+ * Jika tidak, tampilkan "Ukuran Transaksi Valid".
+ * Clue: nama function -> fn soal_23(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 24
+ * Buat variable "apr": f64 = 12.5.
+ * Jika APR lebih dari 10.0, tampilkan "High Yield".
+ * Jika tidak, tampilkan "Low Yield".
+ * Clue: nama function -> fn soal_24(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 25
+ * Buat variable "block_number": u64 = 1_000_000.
+ * Jika block number lebih dari 500_000, tampilkan "Block Sudah Lama".
+ * Jika tidak, tampilkan "Block Masih Baru".
+ * Clue: nama function -> fn soal_25(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 26
+ * Buat variable "liquidity": f64 = 50_000.0.
+ * Buat variable "min_liquidity": f64 = 100_000.0.
+ * Jika liquidity mencukupi minimum, tampilkan "Pool Aktif".
+ * Jika tidak, tampilkan "Liquidity Tidak Cukup".
+ * Clue: nama function -> fn soal_26(), wajib pakai attribute #[test]
+ */
