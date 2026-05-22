@@ -381,6 +381,16 @@ fn soal_21() {
  * Jika tidak, tampilkan "Kamu Tidak Ada di Whitelist".
  * Clue: nama function -> fn soal_22(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_22() {
+    let is_whitelist = true;
+
+    if is_whitelist {
+        println!("Akses MINT NFT DIBERIKAN!");
+    } else {
+        println!("KAMU TIDAK ADA DI WHITELIST!");
+    }
+}
 
 /*
  * SOAL 23
@@ -389,6 +399,16 @@ fn soal_21() {
  * Jika tidak, tampilkan "Ukuran Transaksi Valid".
  * Clue: nama function -> fn soal_23(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_23() {
+    let tx_size = 1200;
+
+    if tx_size > 1000 {
+        println!("Transaksi Terlalu Besar!");
+    } else {
+        println!("Ukuran Transaksi Valid");
+    }
+}
 
 /*
  * SOAL 24
@@ -397,6 +417,16 @@ fn soal_21() {
  * Jika tidak, tampilkan "Low Yield".
  * Clue: nama function -> fn soal_24(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_24() {
+    let apr = 12.5;
+
+    if apr > 10.0 {
+        println!("High Yield!");
+    } else {
+        println!("Low Yield!");
+    }
+}
 
 /*
  * SOAL 25
@@ -405,6 +435,16 @@ fn soal_21() {
  * Jika tidak, tampilkan "Block Masih Baru".
  * Clue: nama function -> fn soal_25(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_25() {
+    let block_number = 1_000_000;
+
+    if block_number > 500_000 {
+        println!("Block Sudah Lama");
+    } else {
+        println!("Block Masih Baru!");
+    }
+}
 
 /*
  * SOAL 26
@@ -414,3 +454,14 @@ fn soal_21() {
  * Jika tidak, tampilkan "Liquidity Tidak Cukup".
  * Clue: nama function -> fn soal_26(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_26() {
+    let liquidity = 50_000.0;
+    let min_liquidity = 100_000.0;
+
+    if liquidity > min_liquidity {
+        println!("POOL AKTIF!");
+    } else {
+        println!("LIQUIDITY TIDAK CUKUP!");
+    }
+}
