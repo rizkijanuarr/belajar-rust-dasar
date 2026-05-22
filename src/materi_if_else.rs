@@ -465,3 +465,47 @@ fn soal_26() {
         println!("LIQUIDITY TIDAK CUKUP!");
     }
 }
+
+/*
+ * SOAL 27
+ * Buat variable "is_contract_paused": bool = true.
+ * Jika contract sedang pause, tampilkan "Contract Sedang Dihentikan".
+ * Jika tidak, tampilkan "Contract Berjalan Normal".
+ * Clue: nama function -> fn soal_27(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 28
+ * Buat variable "wallet_age": u32 = 7.
+ * Buat variable "min_age": u32 = 30.
+ * Jika wallet age mencukupi minimum, tampilkan "Wallet Eligible".
+ * Jika tidak, tampilkan "Wallet Belum Eligible".
+ * Clue: nama function -> fn soal_28(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 29
+ * Buat variable "total_supply": u64 = 1_000_000_000.
+ * Buat variable "circulating": u64 = 800_000_000.
+ * Jika circulating lebih dari 50% total supply, tampilkan "Mayoritas Token Beredar".
+ * Jika tidak, tampilkan "Token Masih Banyak Terkunci".
+ * Clue: nama function -> fn soal_29(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 30
+ * Buat variable "slippage": f64 = 0.8.
+ * Buat variable "max_slippage": f64 = 0.5.
+ * Jika slippage melebihi maksimum, tampilkan "Transaksi Gagal - Slippage Terlalu Tinggi".
+ * Jika tidak, tampilkan "Slippage Aman".
+ * Clue: nama function -> fn soal_30(), wajib pakai attribute #[test]
+ */
+
+/*
+ * SOAL 31
+ * Buat variable "validator_stake": u64 = 32_000.
+ * Buat variable "min_stake": u64 = 32_000.
+ * Jika stake mencukupi minimum, tampilkan "Validator Aktif".
+ * Jika tidak, tampilkan "Stake Tidak Cukup".
+ * Clue: nama function -> fn soal_31(), wajib pakai attribute #[test]
+ */
