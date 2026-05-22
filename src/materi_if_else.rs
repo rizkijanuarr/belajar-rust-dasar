@@ -459,7 +459,7 @@ fn soal_26() {
     let liquidity = 50_000.0;
     let min_liquidity = 100_000.0;
 
-    if liquidity > min_liquidity {
+    if liquidity >= min_liquidity {
         println!("POOL AKTIF!");
     } else {
         println!("LIQUIDITY TIDAK CUKUP!");
