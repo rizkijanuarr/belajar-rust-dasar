@@ -473,6 +473,16 @@ fn soal_26() {
  * Jika tidak, tampilkan "Contract Berjalan Normal".
  * Clue: nama function -> fn soal_27(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_27() {
+    let is_contract_paused = true;
+
+    if is_contract_paused {
+        println!("CONTRACT SEDANG DIHENTIKAN!");
+    } else {
+        println!("CONTRACT BERJALAN NORMAL");
+    }
+}
 
 /*
  * SOAL 28
@@ -482,6 +492,17 @@ fn soal_26() {
  * Jika tidak, tampilkan "Wallet Belum Eligible".
  * Clue: nama function -> fn soal_28(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_28() {
+    let wallet_age = 7;
+    let min_age = 30;
+
+    if wallet_age >= min_age {
+        println!("WALLET ELIGIBLE");
+    } else {
+        println!("WALLET BELUM ELIGIBLE");
+    }
+}
 
 /*
  * SOAL 29
@@ -491,6 +512,18 @@ fn soal_26() {
  * Jika tidak, tampilkan "Token Masih Banyak Terkunci".
  * Clue: nama function -> fn soal_29(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_29() {
+    let total_supply = 1_000_000_000;
+    let circulating = 800_000_000;
+    let setengah_supply = total_supply / 2;
+
+    if circulating > setengah_supply {
+        println!("Mayoritas Token Beredar");
+    } else {
+        println!("Token masih banyak terkunci!");
+    }
+}
 
 /*
  * SOAL 30
@@ -500,6 +533,17 @@ fn soal_26() {
  * Jika tidak, tampilkan "Slippage Aman".
  * Clue: nama function -> fn soal_30(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_30() {
+    let slippage = 0.8;
+    let max_slippage = 0.5;
+
+    if slippage > max_slippage {
+        println!("TRANSAKSI GAGAL - SLIPPAGE TERLALU TINGGI");
+    } else {
+        println!("SLIPPAGE AMAN!");
+    }
+}
 
 /*
  * SOAL 31
@@ -509,3 +553,14 @@ fn soal_26() {
  * Jika tidak, tampilkan "Stake Tidak Cukup".
  * Clue: nama function -> fn soal_31(), wajib pakai attribute #[test]
  */
+#[test]
+fn soal_31() {
+    let validator_stake = 32_000;
+    let min_stake = 32_000;
+
+    if validator_stake >= min_stake {
+        println!("VALIDATOR AKTIF");
+    } else {
+        println!("STAKE TIDAK CUKUP!");
+    }
+}
