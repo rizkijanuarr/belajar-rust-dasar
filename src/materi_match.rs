@@ -150,7 +150,7 @@ fn soal_6() {
     match harga {
         0..=500_000 => println!("Budget"),
         500_001..=2_000_000 => println!("Mid Range"),
-        2_000_001..=5_000_000 => println!("Premium"),
-        _ => println!("Luxury"),
+        2_000_001..=5_000_000 => println!("Luxury"),
+        _ => println!("null"),
     }
 }
