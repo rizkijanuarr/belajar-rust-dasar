@@ -4,6 +4,7 @@ mod materi_match;
 mod materi_variable;
 mod materi_function;
 mod materi_ownership;
+mod materi_slice;
 
 fn main() {
     println!("Hello, world!");
