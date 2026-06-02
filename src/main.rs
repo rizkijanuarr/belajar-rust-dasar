@@ -3,6 +3,7 @@ mod materi_if_else;
 mod materi_match;
 mod materi_variable;
 mod materi_function;
+mod materi_ownership;
 
 fn main() {
     println!("Hello, world!");
