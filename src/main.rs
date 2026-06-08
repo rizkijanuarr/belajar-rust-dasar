@@ -11,6 +11,7 @@ mod materi_vec;
 mod materi_error_handling;
 mod materi_traits;
 mod materi_generics;
+mod materi_lifetime;
 
 fn main() {
     println!("Hello, world!");
