@@ -14,6 +14,7 @@ mod materi_generics;
 mod materi_lifetime;
 mod materi_closures;
 mod materi_iterators;
+mod materi_concurrency;
 
 fn main() {
     println!("Hello, world!");
