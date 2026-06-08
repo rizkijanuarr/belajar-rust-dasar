@@ -7,6 +7,7 @@ mod materi_ownership;
 mod materi_slice;
 mod materi_structs;
 mod materi_enums;
+mod materi_vec;
 
 fn main() {
     println!("Hello, world!");
