@@ -8,6 +8,7 @@ mod materi_slice;
 mod materi_structs;
 mod materi_enums;
 mod materi_vec;
+mod materi_error_handling;
 
 fn main() {
     println!("Hello, world!");
