@@ -9,6 +9,7 @@ mod materi_structs;
 mod materi_enums;
 mod materi_vec;
 mod materi_error_handling;
+mod materi_traits;
 
 fn main() {
     println!("Hello, world!");
