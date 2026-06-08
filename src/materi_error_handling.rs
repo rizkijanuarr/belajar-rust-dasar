@@ -1,3 +1,16 @@
+/*
+    Error Handling adalah cara Rust menangani kondisi gagal/error tanpa crash. Di Rust tidak ada try/catch seperti Java — gantinya pakai Result dan Option.
+    Kenapa penting:
+    - Rust memaksa lo handle semua kemungkinan error
+    - Tidak bisa abaikan error — compiler bakal complain
+    - Di Solana setiap instruksi wajib return Result
+    - Bikin kode lebih aman dan predictable
+
+    2 Tipe utama:
+    - Option<T> → nilai mungkin ada atau tidak ada
+    - Result<T, E> → operasi mungkin sukses atau gagal
+ */
+
 #[test]
 fn materi_option() {
     // Option = Some(nilai) atau None

@@ -1,3 +1,11 @@
+/*
+    Generics adalah cara bikin function atau struct yang bisa bekerja dengan berbagai tipe data tanpa duplikasi kode.
+    Kenapa penting:
+    - Tulis sekali, bisa dipakai berbagai tipe
+    - Semua Collections (Vec<T>, HashMap<K,V>) pakai generics
+    - Result<T, E> dan Option<T> juga generics
+ */
+
 // Function generic
 fn terbesar<T: PartialOrd>(a: T, b: T) -> T {
     if a > b { a } else { b }

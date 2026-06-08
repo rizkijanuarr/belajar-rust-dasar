@@ -1,3 +1,13 @@
+/*
+
+    Struct adalah cara mengelompokkan beberapa data yang berbeda tipe menjadi satu unit. Seperti bikin blueprint object.
+    Kenapa penting:
+    - Representasi data dunia nyata (User, Token, Transaction)
+    - Dasar dari OOP di Rust
+    - Bisa ditambah method dengan impl
+    - Wajib paham sebelum masuk Anchor Framework
+ */
+
 // Definisi struct
 struct Token {
     nama: String,

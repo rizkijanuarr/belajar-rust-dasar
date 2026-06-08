@@ -1,3 +1,11 @@
+/*
+    Slice adalah referensi ke sebagian data dari collection (String atau array) tanpa mengambil ownership-nya.
+    Kenapa penting:
+    - Bisa akses sebagian data tanpa copy
+    - Tidak ambil ownership — data aslinya tetap valid
+    - Sering dipakai untuk string processing & array manipulation
+ */
+
 #[test]
 fn materi_slice() {
     // 1. String Slice (&str)

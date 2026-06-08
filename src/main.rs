@@ -7,7 +7,7 @@ mod materi_ownership;
 mod materi_slice;
 mod materi_structs;
 mod materi_enums;
-mod materi_vec;
+mod materi_collection;
 mod materi_error_handling;
 mod materi_traits;
 mod materi_generics;

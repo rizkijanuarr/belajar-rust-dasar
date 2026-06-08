@@ -1,3 +1,10 @@
+/*
+    Collections adalah tipe data yang bisa menyimpan banyak nilai sekaligus. Di Rust ada 3 yang paling penting: Vec, HashMap, dan HashSet.
+    Kenapa penting:
+    - Wajib buat nyimpen & manipulasi banyak data
+    - Dasar dari semua project real-world
+ */
+
 use std::collections::{HashMap, HashSet};
 
 #[test]

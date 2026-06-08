@@ -1,3 +1,12 @@
+/*
+    Trait adalah kontrak/blueprint yang mendefinisikan behavior yang harus dimiliki sebuah tipe. Mirip interface di Java.
+    Kenapa penting:
+    - Bikin kode reusable & flexible
+    - Anchor Framework heavily menggunakan traits
+    - Dasar dari semua library Rust
+ */
+
+
 // Definisi trait
 trait Info {
     fn tampilkan(&self);

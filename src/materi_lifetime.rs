@@ -1,3 +1,13 @@
+/*
+    Lifetime adalah cara Rust memastikan referensi selalu valid — tidak ada dangling reference (referensi ke data yang sudah dihapus).
+    Kenapa penting:
+    - Compiler butuh tahu seberapa lama referensi hidup
+    - Mencegah bug memori yang berbahaya
+    - Wajib di security — dangling pointer adalah celah exploit
+    - Sering muncul saat function return referensi
+ */
+
+
 // Tanpa lifetime annotation — compiler bingung
 // fn terpanjang(s1: &str, s2: &str) -> &str { ... } ❌
 

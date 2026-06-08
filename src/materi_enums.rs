@@ -1,3 +1,12 @@
+/*
+    Enum adalah tipe data yang nilainya hanya bisa salah satu dari beberapa pilihan yang sudah ditentukan.
+    Kenapa penting:
+    - Representasi kondisi/status yang terbatas
+    - Sangat powerful dikombinasikan dengan match
+    - Option dan Result di Rust adalah enum — wajib paham
+    - Di Solana buat handle berbagai jenis instruksi & error
+ */
+
 // Enum sederhana
 enum StatusTransaksi {
     Pending,
