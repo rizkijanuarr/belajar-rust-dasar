@@ -1,8 +1,8 @@
 #[test]
 fn materi_ownership() {
     // 1. Move / Berpindah
-    let mut s1 = String::from("hello");
-    let s2 = &mut s1;
+    let s1 = String::from("hello");
+    let s2 = &s1;
     // let s3 = &s1;
     println!("s1: {}", s2);
 

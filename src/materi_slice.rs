@@ -11,7 +11,6 @@ fn materi_slice() {
     println!("Kata pertama: {}", kata_pertama); // Output: halo
     println!("Kata kedua: {}", kata_kedua);     // Output: bro
 
-
     // 2. Array Slice
     let kumpulan_angka = [10, 20, 30, 40, 50];
 

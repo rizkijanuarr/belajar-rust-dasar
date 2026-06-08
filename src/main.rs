@@ -5,6 +5,7 @@ mod materi_variable;
 mod materi_function;
 mod materi_ownership;
 mod materi_slice;
+mod materi_structs;
 
 fn main() {
     println!("Hello, world!");
